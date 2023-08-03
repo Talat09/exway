@@ -105,13 +105,14 @@
 }
 .card-section {
   background-color: #d9d9d9;
-  margin-top: 20px;
+  padding-top: 96px;
 }
 /* social media card section */
 .social-media-card {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #d9d9d9;
 }
 .socialmedia-info {
   width: 420px;
