@@ -79,12 +79,18 @@
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   margin: auto;
+  margin-top: 30px;
   padding-left: 150px;
   padding-right: 150px;
 }
 .card-div {
   width: 314px;
   height: 371px;
+  border: 2px solid rgb(189, 183, 183);
+  box-shadow: 2px 5px 10px;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
 .card-div h4 {
   margin-top: 20px;
@@ -96,6 +102,31 @@
 .img {
   width: 297px;
   height: 199px;
+}
+.social-media-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialmedia-info {
+  width: 420px;
+  margin-right: 100px;
+  font-family: "Poppins";
+}
+.social-media-card img {
+  width: 540px;
+}
+.ezway-title {
+  font-size: 40px;
+  font-family: "Poppins";
+  font-weight: 600;
+}
+.ezway {
+  color: #ff8a00;
+}
+.text-parag {
+  font-family: "Poppins";
+  color: #555555;
 }
 @media only screen and (max-width: 992px) {
   .banner {
@@ -110,6 +141,19 @@
     padding-left: 0px;
     padding-right: 0px;
   }
+  .social-media-card {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+  .socialmedia-info {
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+  }
+  .social-media-card img {
+    width: 100%;
+  }
 }
 @media only screen and (max-width: 600px) {
   .banner {
@@ -122,5 +166,11 @@
   }
   .card-container {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .social-media-card {
+    flex-direction: column-reverse;
+  }
+  .social-media-card img {
+    width: 100%;
   }
 }
